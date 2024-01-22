@@ -1,22 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ...google font...... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
 </head>
-<body>
+
+<body class="font-manrope">
     <header>
-      <nav>
-        <h2>loading.........................</h2>
-      </nav>
+        <!-- ........navbar section.......... -->
+        <div class="container navbar bg-orange-200 rounded-lg mx-auto mt-8 px-8 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                        <li>
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Pages</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar">
+                    <h3 class="text-[#131318] text-3xl font-bold ml-3">Hockey<span class="text-[#FF4240]">'</span>s</h3>
+                </div>
+                <div class="navbar-center text-[#131318] space-x-6 ml-8 hidden mg  lg:flex">
+                    <a class="hover:text-orange-500 duration-300" href="#">Home</a>
+                    <a class="hover:text-orange-500 duration-300" href="#">About</a>
+                    <a class="hover:text-orange-500 duration-300" href="#">Pages</a>
+                    <a class="hover:text-orange-500 duration-300" href="#">Blog</a>
+                    <a class="hover:text-orange-500 duration-300" href="#">Contact</a>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="  lg:flex space-x-3 items-center justify-between px-6 py-3 ">
+                    <img src="./images/Frame.png" alt="">
+                    <button class="btn btn-error text-white">Get Ticket</button>
+                </div>
+
+            </div>
+        </div>
     </header>
+
+
     <main>
+        <!--...........banner section.......-->
+        <section class="container mx-auto my-24   px-4">
+            <div>
+                <div class="carousel w-full">
+                    <div id="slide1"
+                        class="carousel-item relative lg:h-[70vh] rounded-xl w-full bg-[url(./images/1.png)] bg-center bg-cover flex justify-center ">
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                        <div
+                            class="absolute w-[55vh] h-44 bg-black rounded-xl text-white space-y-3 p-7 mt-[400px] ml-[800px]">
+                            <h3 class="text-xl font-semibold">Meet all the heroes from the field</h3>
+                            <p class="opacity-75">Hockey is a fast-paced team sport played on a rectangular field of ice
+                                or on an indoor rink. The objective of the game is to score goals by shooting a puck
+                                into the opponent's net using a hockey stick</p>
+                        </div>
+                    </div>
+                    <div id="slide2"
+                        class="carousel-item relative lg:h-[70vh] rounded-xl w-full bg-[url(./images/2.png)] bg-center bg-cover flex text-center items-center justify-center ">
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                        <div
+                            class="absolute w-[55vh] h-44 bg-black rounded-xl text-white space-y-3 p-7 mt-[400px] ml-[800px]">
+                            <h3 class="text-xl font-semibold">Meet all the heroes from the field</h3>
+                            <p class="opacity-75">Hockey is a fast-paced team sport played on a rectangular field of ice
+                                or on an indoor rink. The objective of the game is to score goals by shooting a puck
+                                into the opponent's net using a hockey stick</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
 
     </main>
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
